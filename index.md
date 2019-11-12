@@ -1,12 +1,11 @@
 
-# Cuando volveran los asteroides malditos
+# ¿Cuándo volveran los asteroides asecinoss?
 
 Queria hacer algo divertido con powerbi y python solamente por diversion y encontre estas dos Apis
 - ***Asteroid and comet close approaches to the planets in the past and future*** https://ssd-api.jpl.nasa.gov/doc/cad.html
 - **Asteroids - NeoWs**   https://api.nasa.gov/neo/rest/v1/neo/browse/
 Y pense en realizar un pequeño reporte de los asteoroides que pasan cerca de la tierra.
 
-<!DOCTYPE html>
 <html>
 <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMWU5NmU1MDctZGY4NC00NTQyLTgzZTctMzc0MGQ0NjBhODI0IiwidCI6ImE1YmRlMjRmLTdlODgtNGE0ZC04ZTg4LWY3YTFmYWY5ZGE5NCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
 </html>
