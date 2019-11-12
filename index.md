@@ -30,7 +30,9 @@ for x in datastore["near_earth_objects"]:
      lista.append(y["id"])
 u =np.unique(np.array(lista))
 ```
-
+<html>
+  <a href="google.com">hola</a>
+  </html>
 # Buscar esos Id en la otra Api
 
 Despues se hace solicitud a Api SSD/CNEOS   _SSD (Solar System Dynamics) and CNEOS (Center for Near-Earth Object Studies)_ por cada Id de la lista y se une a cada uno de las peticiones para poder saber si va a volver a pasar cerca de la tierra dentro la fecha del get
