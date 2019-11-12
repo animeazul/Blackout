@@ -4,18 +4,14 @@
 ### Header 3
 Queria hacer algo divertido con powerbi y python solamente por diversion y encontre estas dos Apis
 - ***Asteroid and comet close approaches to the planets in the past and future*** https://ssd-api.jpl.nasa.gov/doc/cad.html
-- **Asteroids - NeoWs** https://api.nasa.gov/neo/rest/v1/neo/browse/
+- **Asteroids - NeoWs** [Link]https://api.nasa.gov/neo/rest/v1/neo/browse/
 Y pense en realizar un pequeño reporte de los asteoroides que pasan cerca de la tierra.
 
 ## 1.- Primero API KEY
-Si buscan las llaves para Apis pueden registrarse en https://api.nasa.gov/ y tambien encontrar mas APIS.
-
-**Bold** and _Italic_ and `Code` text
+Si buscan las llaves para Apis pueden registrarse en [Link]https://api.nasa.gov/ y tambien encontrar mas APIS.
 
 # Solicitud a Api **Asteroids - NeoWs**  en Python
-Esta da los asteroides cercanos a ala tierra en los proximos 7 dias
-
-[Link](url) and ![Image](src)
+Esta da los asteroides cercanos a ala tierra en los proximos 7 dias , recuerden usar su propia Key en **api_key=XXXXXXXX**
 
 
 ```python
@@ -23,7 +19,7 @@ import requests
 import json #Por si las dudas
 import pandas as pd
 import numpy as np
-response = requests.get("https://api.nasa.gov/neo/rest/v1/feed?api_key=T6v02RbkRXZal2LkA1rUPMo2vi9RlnKZOBZYtDKa")
+response = requests.get("https://api.nasa.gov/neo/rest/v1/feed?api_key=XXXXXXXX")
 datastore =response.json()
 ```
 # Agregar todos los Id a una lista 
@@ -68,5 +64,5 @@ print(df2)
 
 
 Si buscan algunas otras Apis pueden encontrarlas en
-https://api.nasa.gov/
+[Link]https://api.nasa.gov/
 
