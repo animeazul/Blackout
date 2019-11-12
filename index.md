@@ -5,9 +5,11 @@ Queria hacer algo divertido con powerbi y python solamente por diversion y encon
 - ***Asteroid and comet close approaches to the planets in the past and future*** https://ssd-api.jpl.nasa.gov/doc/cad.html
 - **Asteroids - NeoWs**   https://api.nasa.gov/neo/rest/v1/neo/browse/
 Y pense en realizar un pequeño reporte de los asteoroides que pasan cerca de la tierra.
+
+<!DOCTYPE html>
 <html>
 <iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMWU5NmU1MDctZGY4NC00NTQyLTgzZTctMzc0MGQ0NjBhODI0IiwidCI6ImE1YmRlMjRmLTdlODgtNGE0ZC04ZTg4LWY3YTFmYWY5ZGE5NCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
- </html>
+</html>
 
 ## 1.- Primero API KEY
 Si buscan las llaves para Apis pueden registrarse en https://api.nasa.gov/ y tambien encontrar mas APIS.
