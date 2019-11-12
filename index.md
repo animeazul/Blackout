@@ -5,6 +5,9 @@ Queria hacer algo divertido con powerbi y python solamente por diversion y encon
 - ***Asteroid and comet close approaches to the planets in the past and future*** https://ssd-api.jpl.nasa.gov/doc/cad.html
 - **Asteroids - NeoWs**   https://api.nasa.gov/neo/rest/v1/neo/browse/
 Y pense en realizar un pequeño reporte de los asteoroides que pasan cerca de la tierra.
+<html>
+<iframe width="800" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiMWU5NmU1MDctZGY4NC00NTQyLTgzZTctMzc0MGQ0NjBhODI0IiwidCI6ImE1YmRlMjRmLTdlODgtNGE0ZC04ZTg4LWY3YTFmYWY5ZGE5NCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+ </html>
 
 ## 1.- Primero API KEY
 Si buscan las llaves para Apis pueden registrarse en https://api.nasa.gov/ y tambien encontrar mas APIS.
@@ -30,9 +33,7 @@ for x in datastore["near_earth_objects"]:
      lista.append(y["id"])
 u =np.unique(np.array(lista))
 ```
-<html>
-  <a href="google.com">hola</a>
-  </html>
+
 # Buscar esos Id en la otra Api
 
 Despues se hace solicitud a Api SSD/CNEOS   _SSD (Solar System Dynamics) and CNEOS (Center for Near-Earth Object Studies)_ por cada Id de la lista y se une a cada uno de las peticiones para poder saber si va a volver a pasar cerca de la tierra dentro la fecha del get
