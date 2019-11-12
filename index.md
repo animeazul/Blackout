@@ -40,7 +40,7 @@ let
 in
     #"Changed Type"
 ```
-### 2 .- Python scryot 
+### 2 .- Python scrypt 
 El codigo M para este es el siguiente pero desglozo el codigo python despues.
 Si lo quieren copiar recuerden usar su propia Key en **api_key=XXXXXXXX**
 
