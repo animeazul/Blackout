@@ -40,7 +40,7 @@ let
 in
     #"Changed Type"
 ```
-##2 .- Python scryot 
+### 2 .- Python scryot 
 El codigo M para este es el siguiente pero desglozo el codigo python despues.
 Si lo quieren copiar recuerden usar su propia Key en **api_key=XXXXXXXX**
 
@@ -79,7 +79,7 @@ for x in datastore["near_earth_objects"]:
 u =np.unique(np.array(lista))
 ```
 
-# Buscar esos Id en la otra Api
+### Buscar esos Id en la otra Api
 
 Despues se hace solicitud a Api SSD/CNEOS   _SSD (Solar System Dynamics) and CNEOS (Center for Near-Earth Object Studies)_ por cada Id de la lista y se une a cada uno de las peticiones para poder saber si va a volver a pasar cerca de la tierra dentro la fecha del get
 y cambia la lista a dataframe
