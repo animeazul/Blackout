@@ -22,7 +22,7 @@ Para esto use dos tipos de fuente:
 Agrego el codigo en power query M , recuerden usar su Key en la peticion pyhton (para las consultas induviduales) ,y transformandolas 
 para usar los datos (recuerden que por lo general la respuesta de un api se entrega en formato .json)
 
-```M
+```
 let
     Source = Json.Document(Web.Contents("https://api.nasa.gov/neo/rest/v1/feed?api_key=XXXXXXXXXX")),
     near_earth_objects = Source[near_earth_objects],
@@ -44,7 +44,7 @@ in
 El codigo M para este es el siguiente pero desglozo el codigo python despues.
 Si lo quieren copiar recuerden usar su propia Key en **api_key=XXXXXXXX**
 
-```M
+```
 let
     Source = Python.Execute("# -*- coding: utf-8 -*-#(lf)""""""#(lf)Created on Sat Nov  9 23:17:16 2019#(lf)#(lf)@author: jjdiaz#(lf)""""""#(lf)#(lf)#(lf)import requests#(lf)import json#(lf)import pandas as pd#(lf)import numpy as np#(lf)response = requests.get(""https://api.nasa.gov/neo/rest/v1/feed?api_key=XXXXXX"")#(lf)datastore =response.json()#(lf)#(lf)lista = []#(lf)for x in datastore[""near_earth_objects""]:#(lf)  #print(datastore[""near_earth_objects""][x]) #(lf)  for y in datastore[""near_earth_objects""][x]:#(lf)     lista.append(y[""id""])#(lf)      #(lf)u =np.unique(np.array(lista))#(lf)df2=pd.DataFrame()#(lf)#(lf)errornum=0#(lf)for w in u:#(lf)  # print( w)#(lf)   response2 = requests.get(""https://ssd-api.jpl.nasa.gov/cad.api?des=""+w+""&date-min=1900-01-01&date-max=2100-01-01&dist-max=0.2"")#(lf)   json_string =response2.json()#(lf)   #print(json_string[""data""])#(lf)   try:#(lf)       df = json_string[""data""]#(lf)   except:#(lf)       errornum=1+errornum#(lf)   else:#(lf)    a=0    #(lf)    for i in df:#(lf)       #(lf)       df[a].append(np.array2string(w))#(lf)       a=a+1#(lf)       #(lf)    df= pd.DataFrame(df)#(lf)    df2=df2.append(df, ignore_index=True)#(lf)print(df2)#(lf)      #(lf)#(lf)   #(lf)      "),
     df1 = Source{[Name="df2"]}[Value],
